@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+          width: 400px;
+          background-color: orange;
+          animation-name: text;
+          animation-duration: 3s;
+        }
+        #one{
+             animation-fill-mode: none;
+        }
+        #two{
+              animation-fill-mode: forwards;
+        }
+        #three{
+             animation-fill-mode: backwards;
+        }
+        #four{
+             animation-fill-mode: both;
+             animation-delay: 2s
+        }
+        @keyframes text{
+            from{
+                margin-left: 0%;
+                background-color: #aaa;
+            }
+            to{
+               margin-left: 60%;
+               background-color: pink;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 id="one">none</h1>
+    <h1 id="two">forward</h1>
+    <h1 id="three">backward</h1>
+    <h1 id="four">both</h1>
+    
+</body>
+</html>
