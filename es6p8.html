@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1> javascript functions</h1>
+    <h2>default parameter values</h2>
+    <p>if y is not passed or undefined,then y=10:</p>
+
+    <p id="demo"></p>
+
+    <script>
+        function myFunction(x,y=2){
+            return x+y;
+        }
+        document.getElementById("demo").innerHtml= myFunction(5);
+    </script>
+</body>
+</html>

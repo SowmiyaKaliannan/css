@@ -1,0 +1,19 @@
+<body>
+    <input type="text" onkeydown="myfun()">
+    <p id="d1"></p>
+    <script>
+         function myfun(){
+             var x = event.key;
+             document.getElementById("d1").innerHTML = "You pressed: " + x;
+        }
+
+        //function myfun(){
+         //   document.getElementById("d1").innerHTML="Your Pressed a key inside the input field";
+        //}
+        
+    </script>
+    </body>
+
+
+    <!--the first fuction shows which key is pressed in the input field -->
+    <!--the second fuction shows "you pressed" when the key is pressed in the input field -->
