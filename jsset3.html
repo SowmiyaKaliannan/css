@@ -1,0 +1,15 @@
+<body>
+    <p id="d1"> </p>
+    <script>
+       
+const a= new Set();
+a.add('1');
+a.add('2');
+a.add('3');
+
+const b= [...a];
+console.log(b.join(","));
+document.getElementById("d1").innerHTML=b.join(",");
+
+    </script>
+</body>

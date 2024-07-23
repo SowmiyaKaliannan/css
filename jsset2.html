@@ -1,0 +1,40 @@
+<html><head>
+
+</head>
+<body>
+    <p id="d1">
+    </p>
+    <script>
+        const emp=new Set();
+        emp.add("a")
+        emp.add("b")
+        emp.add("c")
+        emp.add("d")
+        emp.add("e")
+        emp.add("f")
+
+// display the data 
+
+//list of all entries
+        for(const x of emp){
+            document.getElementById("d1").innerHTML+=x;
+        }
+        
+//has
+document.getElementById("d1").innerHTML+=emp.has("a");
+document.getElementById("d1").innerHTML+=emp.has("y");
+
+//get all the values
+document.getElementById("d1").innerHTML+=emp.values();
+
+//keys
+document.getElementById("d1").innerHTML+=emp.keys();
+
+//entries
+document.getElementById("d1").innerHTML+=emp.entries();
+
+
+
+
+    </script>
+</body></html>
